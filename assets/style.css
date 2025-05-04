@@ -1,90 +1,118 @@
-body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    color: white;
-    background-color: #CCCCCC;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-h1 {
-    color: #FECD23;
-}
+    body {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #CCCCCC;
+        padding: 0 30px;
+    }
 
-h2 {
-    font-weight: 400;
-    font-size: 30px;
+    h1 {
+        margin: 0.75rem;
+        color: #FECD23;
+    }
 
-}
+    h2 {
+        margin-top: 0.75rem;
+        font-weight: 400;
+        font-size: 1.7rem;
+    }
 
-input {
-    height: 26px;
-    width: 500px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    padding: 5px;
-    margin-bottom: 25px;
-}
+    input {
+        height: 2.3rem;
+        width: 70%;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.12rem;
+        padding: 0.31rem;
+        margin-bottom: 1.56rem;
+    }
 
-button {
-    border: none;
-    background-color: #1D0C20;
-    color: wheat;
-    width: 100px;
-    height: 44px;
-    border-radius: 3px;
-    font-size: 16px;
-    font-style: bold;
-}
+    button {
+        border: none;
+        background-color: #1D0C20;
+        color: wheat;
+        width: 6.25rem;
+        height: 2.75rem;
+        border-radius: 3px;
+        font-size: 1rem;
+        font-style: bold;
+    }
 
-button:hover {
-    background-color: #1d0c20d0;
-    cursor: pointer;
-}
+    button:hover {
+        background-color: #1d0c20d0;
+        cursor: pointer;
+    }
 
-.container {
-    padding: 1px 30px 10px;
-    margin: 0 auto;
-    width: 750px;
-    border-radius: 10px;
-    background-image: linear-gradient(#1D0C20, #651F71);
-    text-align: center;
-}
+    .container {
+        padding: 1px 30px 10px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 750px;
+        border-radius: 10px;
+        background-image: linear-gradient(#1D0C20, #651F71);
+        text-align: center;
+    }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    background-image: linear-gradient(#651F70, #1D0C20);
-    height: 520px;
-    overflow: hidden;
-}
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2.5rem;
+        margin-bottom: 0.3rem; 
+        border-radius: 10px;
+        background-image: linear-gradient(#651F70, #1D0C20);
+        overflow: hidden;
+    }
 
-.options {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-}
+    .options {
+        margin-top: 1.25rem;
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.87rem;
+    }
 
-.choice {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 250px;
-    background-image: linear-gradient(#3B5AEE, #74CFFF);
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #2637DC;
-    border-width: 10px;
-    font-weight: 400;
-    font-size: 25px;
-}
+    .choice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 11.2rem;
+        height: 18.5rem;
+        background-image: linear-gradient(#3B5AEE, #74CFFF);
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #2637DC;
+        border-width: 0.62rem;
+        font-size: 1.56rem;
+        margin-bottom: 1.25rem;
+    }
 
-.author {
-    font-size: 16px;
-}
+    .author {
+        font-size: 1rem;
+    }
+
+
+    @media screen and (max-width: 600px) {
+        html {
+            font-size: 14px;
+        }
+
+        body {
+            padding: 0 10px;
+        }
+
+        .options {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .choice {
+            width: 80%;
+        }
+    }
